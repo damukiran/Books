@@ -6,8 +6,9 @@ pipeline {
   stages {
         
     stage('Cloning Git') {
-        checkout scm
-      
+      steps {
+        git 'https://github.com/damukiran/Books.git'
+      }
     }
         
     stage('Install dependencies') {
