@@ -39,5 +39,5 @@ app.post('/', (req, res) => {
     })
 })
 app.listen(port, () => {
-    console.log("server started with port no " + port)
+    console.log("server running  with port no " + port)
 })
