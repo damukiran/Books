@@ -17,7 +17,7 @@ db.once('open', function () {
 })
 app.get('/books', (req, res) => {
    var input = req.query
-    Book.findById({}).exec(function (err, data) {
+    Book.find({}).exec(function (err, data) {
         console.log(data)
         res.send(data)
     })
