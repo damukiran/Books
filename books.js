@@ -13,7 +13,7 @@ mongoose.connect(url, { useNewUrlParser: true,useUnifiedTopology: true });
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'MongoDB connection error:'));
 db.once('open', function () {
-    console.log('Connected to the database successfully.')
+    console.log('Connected to the database our successfully.')
 })
 app.get('/books', (req, res) => {
    var input = req.query
@@ -39,5 +39,5 @@ app.post('/', (req, res) => {
     })
 })
 app.listen(port, () => {
-    console.log("server started with port no" + port)
+    console.log("server started with port no " + port)
 })
